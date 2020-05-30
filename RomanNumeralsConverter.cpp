@@ -1,10 +1,8 @@
 #include "gmock/gmock.h"
-#include <string>
 #include <stdexcept>
 #include "RomanNumerals.h"
 
 using namespace testing;
-using namespace std;
 using namespace RomanNumerals;
 
 TEST(RomanNumerals, CanConvertNumbersInRange) {
@@ -34,8 +32,8 @@ TEST(RomanNumerals, CanConvertNumbersInRange) {
 }
 
 TEST(RomanNumerals, ThrowsWhenNumbersOutOfRange) {
-	EXPECT_THROW(convert(0), invalid_argument);
-	EXPECT_THROW(convert(4000), invalid_argument);
+	EXPECT_THROW(convert(0), std::invalid_argument);
+	EXPECT_THROW(convert(4000), std::invalid_argument);
 }
 
 int main(int argc, char** argv) {
