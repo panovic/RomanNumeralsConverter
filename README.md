@@ -1,4 +1,4 @@
-# Roman Numerals Coverter
+# Roman Numerals Converter
 ## Kata
 Write a function that takes an [Arabic number](https://en.wikipedia.org/wiki/Arabic_numerals) and returns its [Roman numeral](https://en.wikipedia.org/wiki/Roman_numerals) equivalent (as a string).
 
