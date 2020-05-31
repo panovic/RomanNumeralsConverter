@@ -1,9 +1,11 @@
 #pragma once
 #include <string>
+//#include <vector>
 
 namespace RomanNumerals {
 	const unsigned int MIN_ARABIC_NUMBER = 1;
 	const unsigned int MAX_ARABIC_NUMBER = 3999;
+	// const std::vector<std::pair<unsigned int, std::string>> ARABIC_TO_ROMAN_CONVERSION_TABLE = {
 	const auto ARABIC_TO_ROMAN_CONVERSION_TABLE = {
 		std::make_pair(1000u, "M"),
 		std::make_pair(900u, "CM"),
