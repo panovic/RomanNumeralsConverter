@@ -4,7 +4,7 @@
 
 std::string RomanNumerals::convert(unsigned int arabic) {
 	if ((arabic < MIN_ARABIC_NUMBER) || (arabic > MAX_ARABIC_NUMBER)) {
-		throw std::invalid_argument{ "Out of range" };
+		throw std::invalid_argument{ OUT_OF_RANGE_ERROR_MESSAGE };
 	}
 
 	std::string roman{ "" };
