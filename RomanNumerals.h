@@ -3,13 +3,13 @@
 //#include <vector>
 
 namespace RomanNumerals {
-	const auto MIN_ARABIC_NUMBER = 1u;
-	const auto MAX_ARABIC_NUMBER = 3999u;
-	//const auto OUT_OF_RANGE_ERROR_MESSAGE{ std::format("Out of range [{},{}]", MIN_ARABIC_NUMBER, MAX_ARABIC_NUMBER) }; // c++20
-	const auto OUT_OF_RANGE_ERROR_MESSAGE{ "Out of range [" + std::to_string(MIN_ARABIC_NUMBER) + "," + std::to_string(MAX_ARABIC_NUMBER) + "]" };
+	static const auto MIN_ARABIC_NUMBER = 1u;
+	static const auto MAX_ARABIC_NUMBER = 3999u;
+	//static const auto OUT_OF_RANGE_ERROR_MESSAGE{ std::format("Out of range [{},{}]", MIN_ARABIC_NUMBER, MAX_ARABIC_NUMBER) }; // c++20
+	static const auto OUT_OF_RANGE_ERROR_MESSAGE{ "Out of range [" + std::to_string(MIN_ARABIC_NUMBER) + "," + std::to_string(MAX_ARABIC_NUMBER) + "]" };
 
 	// const std::vector<std::pair<unsigned int, std::string>> ARABIC_TO_ROMAN_CONVERSION_TABLE = {
-	const auto ARABIC_TO_ROMAN_CONVERSION_TABLE = {
+	static const auto ARABIC_TO_ROMAN_CONVERSION_TABLE = {
 		std::make_pair(1000u, "M"),
 		std::make_pair(900u, "CM"),
 		std::make_pair(500u, "D"),
